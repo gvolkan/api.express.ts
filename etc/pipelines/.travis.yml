@@ -1,0 +1,23 @@
+---
+#####
+language : node_js
+node_js : [ "7" ]
+
+notifications :
+  email :
+    recipients :
+      - k@whiteoranges.com
+    on_success : never
+    on_failure : always
+
+before_install :
+  - npm install -g yarn
+install :
+  - yarn install
+
+script :
+  - npm run version
+
+
+
+

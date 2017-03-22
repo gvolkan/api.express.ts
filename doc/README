@@ -1,4 +1,12 @@
-# SETUP #
+# Api.express.ts #
+
+[![Travis](https://img.shields.io/travis/stiminteractive/api.express.ts.svg)](https://travis-ci.org/stiminteractive/api.express.ts)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/stiminteractive/api.express.ts.svg)](https://github.com/stiminteractive/api.express.ts/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/stiminteractive/api.express.ts.svg)](https://github.com/stiminteractive/api.express.ts/issues)
+[![Github All Releases](https://img.shields.io/github/downloads/stiminteractive/api.express.ts/total.svg)](https://github.com/stiminteractive/api.express.ts/releases)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Setup #
 
 ```
 npm install -g yarn
@@ -7,7 +15,7 @@ npm install -g typescript@2.x.x
 yarn install
 ```
 
-# USAGE #
+# Usage #
 
 ```
 npm run (cmd)
@@ -23,9 +31,9 @@ ts-node run --host=(host) --https=(https) --http=(http)
 * `https` is the https port to bind
 * `http` is the http port to bind
 
-# COMMANDS #
+# Commands #
 
-##### TOOLS #####
+##### Tools #####
 
 * `ts-node` : ts-node
 * `http-server` : http-server
@@ -34,7 +42,7 @@ ts-node run --host=(host) --https=(https) --http=(http)
 * `mocha` : mocha
 * `nyc` : nyc
 
-##### CLEAN #####
+##### Clean #####
 
 * `clean` : __alias__ for `clean:all`
 * `clean:all` : __alias__ for `clean:analyze`, `clean:coverage`, `clean:dist`, `clean:modules`, `clean:doc`
@@ -44,7 +52,7 @@ ts-node run --host=(host) --https=(https) --http=(http)
 * `clean:modules` : clean `/node_modules` using rm -rf
 * `clean:doc` : clean `/doc/typedoc` using rm -rf
 
-##### SERVE #####
+##### Serve #####
 
 * `start` : __alias__ for `serve`
 * `serve` : serve `/src` using ts-node
@@ -60,25 +68,25 @@ ts-node run --host=(host) --https=(https) --http=(http)
 * `serve:doc` : serve `/doc/typedoc` using http-server
     * See : [http://localhost:8080](http://localhost:8080)
 
-##### DOCUMENTATION #####
+##### Documentation #####
 
 * `doc` : run `documentation generation` to `/doc/typedoc` using typedoc
 
-##### STATIC ANALYSIS #####
+##### Static Code Analysis #####
 
 * `lint` : run `static analysis` to `/doc/analyze` using tslint
 
-##### UNIT TESTS #####
+##### Unit Tests #####
 
 * `test` : __alias__ for `test:all`
 * `test:one -- (test)` : run one `unit test` using mocha
 * `test:all` : run all `unit tests` using mocha
 
-##### FINAL #####
+##### Package #####
 
 * `version` : __alias__ for `test`
 
-# NOTES #
+# Notes #
 
 * See : `package.json`
 

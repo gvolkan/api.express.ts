@@ -1,6 +1,30 @@
-# SETUP #
+# (title) #
 
-TBD
+[![Travis](https://img.shields.io/travis/{owner}/{repository}.svg)](https://travis-ci.org/{owner}/{repository})
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/{owner}/{repository}.svg)](https://github.com/{owner}/{repository}/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/{owner}/{repository}.svg)](https://github.com/{owner}/{repository}/issues)
+[![Github All Releases](https://img.shields.io/github/downloads/{owner}/{repository}/total.svg)](https://github.com/{owner}/{repository}/releases)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Setup #
+
+````
+which bash
+```
+
+# Usage #
+
+```
+bash (cmd)
+```
+
+# Commands #
+
+* `ls` : lists directories, files, and links
+
+# Notes #
+
+* [www.google.com](www.google.com)
 
 
 

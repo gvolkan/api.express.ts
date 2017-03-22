@@ -1,0 +1,37 @@
+{
+  "sourceMap" : true ,
+  "instrument" : true ,
+  "report-dir" : "doc/coverage" ,
+
+  "include" :
+  [
+    "src/**/*.ts"
+  ] ,
+
+  "exclude" :
+  [
+    "src/**/*.spec.ts"
+  ] ,
+
+  "require" :
+  [
+    "ts-node/register"
+  ] ,
+
+  "reporter" :
+  [
+    "text-summary" ,
+    "html"
+  ] ,
+
+  "extension" :
+  [
+    ".tsx" ,
+    ".ts"
+  ]
+
+}
+
+
+
+

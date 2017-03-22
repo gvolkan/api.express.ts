@@ -1,0 +1,56 @@
+node
+{
+  def outpt
+  def image = "kuwas/express"
+  def registry = "https://registry.kube-system"
+
+  // container.withRun
+  // def container = docker.image( "kuwas/node:latest" )
+
+  try
+  {
+    stage( "build.clone" )
+    {
+      checkout scm
+    }
+
+    stage( "build.setup" )
+    {
+      sh "rm -rf ~/.ssh"
+      sh "mkdir -p ~/.ssh"
+      sh "echo 'IdentityFile ~/.ssh/key' >> ~/.ssh/config"
+      sh "#!/bin/sh -e \n ( umask 077 ; echo $BBSSH_PRV | base64 --decode > ~/.ssh/key )"
+      sh "cat known_hosts >> ~/.ssh/known_hosts"
+    }
+
+    stage( "build.image" )
+    {
+      outpt = docker.build( image , "." )
+    }
+
+    stage( "build.push" )
+    {
+      def number = ( env.BUILD_NUMBER )
+      def branch = ( env.BRANCH_NAME )
+      def tag = "${number}-${branch}"
+
+      docker.withRegistry( registry )
+      {
+        outpt.push "latest"
+        outpt.push "${tag}"
+      }
+
+    }
+
+  }
+
+  catch( error )
+  {
+    throw error
+  }
+
+}
+
+
+
+

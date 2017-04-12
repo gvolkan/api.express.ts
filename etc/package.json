@@ -43,7 +43,7 @@
     "predoc" : "npm run clean:doc" ,
 
     "postlint" : "cat doc/analyze/index.txt" ,
-    "lint" : "tslint --config 'tslint.json' --project 'tsconfig.json' --format 'codeFrame' --exclude '**/*.b.ts' --exclude '**/*.d.ts' --out 'doc/analyze/index.txt' --type-check --force 'src/**/*.ts'" ,
+    "lint" : "tslint --config 'tslint.json' --project 'tsconfig.json' --format 'codeFrame' --exclude '**/*.d.ts' --out 'doc/analyze/index.txt' --type-check --force 'src/**/*.ts'" ,
     "prelint" : "npm run clean:analyze" ,
 
     "test" : "npm run test:all" ,

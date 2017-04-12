@@ -5,13 +5,13 @@ import * as CommandLineArgs from "command-line-args" ;
 /** @exports */
 export const COMMAND : GroupedOutput = CommandLineArgs
 ([
-  { name : "http" ,       type : String , defaultValue : "3080" } ,
-  { name : "https" ,      type : String , defaultValue : "3443" } ,
+  { name : "http" ,       type : String , defaultValue : "3080"    } ,
+  { name : "https" ,      type : String , defaultValue : "3443"    } ,
   { name : "host" ,       type : String , defaultValue : "0.0.0.0" } ,
 
   { name : "bail" ,       type : Boolean } ,
-  { name : "compilers" ,  type : String } ,
+  { name : "compilers" ,  type : String  } ,
   { name : "full-trace" , type : Boolean } ,
-  { name : "require" ,    type : String } ,
+  { name : "require" ,    type : String  } ,
 
 ]) ;

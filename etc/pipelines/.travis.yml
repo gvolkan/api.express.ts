@@ -17,7 +17,3 @@ install :
 
 script :
   - npm run version
-
-
-
-

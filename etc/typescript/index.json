@@ -14,20 +14,20 @@
       "express" ,
       "body-parser" ,
       "winston" ,
-      "sqlite3" ,
       "chai" ,
       "mocha" ,
       "sinon" ,
       "sinon-chai" ,
       "chance" ,
-      "lodash" ,
-      "numeral"
+      "numeral" ,
+      "lodash"
     ] ,
 
     "lib" :
     [
-      "es6" ,
-      "es7"
+      "ES2015" ,
+      "ES2016" ,
+      "ES2017"
     ]
 
   }

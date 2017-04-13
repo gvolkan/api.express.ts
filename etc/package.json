@@ -79,7 +79,6 @@
     "multer" : "1.3.x" ,
 
     "sqlite3" : "3.1.x" ,
-    "@types/sqlite3" : "2.2.x" ,
     "typeorm" : "0.0.x" ,
 
     "chai" : "3.5.x" ,

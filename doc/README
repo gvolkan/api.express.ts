@@ -79,7 +79,7 @@ ts-node run --host=(host) --https=(https) --http=(http)
 ##### Unit Tests #####
 
 * `test` : __alias__ for `test:all`
-* `test:one -- (test)` : run one `unit test` using mocha
+* `test:one (test)` : run one `unit test` using mocha
 * `test:all` : run all `unit tests` using mocha
 
 ##### Package #####

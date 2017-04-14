@@ -15,9 +15,7 @@ export class StoreService
   /** @param */
   protected dbc : Connection ;
 
-  /**
-   * @param input
-   */
+  /** @param */
   public async store() : Promise<Connection>
   {
     if ( !this.dbc ) {

@@ -1,3 +1,10 @@
+# 1.0.3 #
+## 2017-04-15 ##
+
+* Added: api.template.ts template
+* Added: readme coveralls badge
+* Fixed: tsconfig typo issue
+
 # 1.0.2 #
 ## 2017-04-15 ##
 

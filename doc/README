@@ -2,6 +2,7 @@
 
 > [![License][license-src]][license-lnk]
 > [![Travis][travis-src]][travis-lnk]
+> [![Coveralls][coveralls-src]][coveralls-lnk]
 > [![Releases][releases-src]][releases-lnk]
 > [![Pull Requests][pullrequest-src]][pullrequest-lnk]
 > [![Issues][issues-src]][issues-lnk]
@@ -39,6 +40,9 @@ bash (cmd)
 
 [travis-src]: https://img.shields.io/travis/{owner}/{repository}.svg?style=flat-square
 [travis-lnk]: https://travis-ci.org/{owner}/{repository}
+
+[coveralls-src]: https://img.shields.io/coveralls/{owner}/{repository}.svg?style=flat-square
+[coveralls-lnk]: https://coveralls.io/github/{owner}/{repository}
 
 [releases-src]: https://img.shields.io/github/downloads/{owner}/{repository}/total.svg?style=flat-square
 [releases-lnk]: https://github.com/{owner}/{repository}/releases

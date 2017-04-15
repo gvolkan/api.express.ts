@@ -1,10 +1,10 @@
 # (title) #
 
-[![Travis](https://img.shields.io/travis/{owner}/{repository}.svg)](https://travis-ci.org/{owner}/{repository})
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/{owner}/{repository}.svg)](https://github.com/{owner}/{repository}/pulls)
-[![GitHub Issues](https://img.shields.io/github/issues/{owner}/{repository}.svg)](https://github.com/{owner}/{repository}/issues)
-[![Github All Releases](https://img.shields.io/github/downloads/{owner}/{repository}/total.svg)](https://github.com/{owner}/{repository}/releases)
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+> [![License][license-src]][license-lnk]
+> [![Travis][travis-src]][travis-lnk]
+> [![Releases][releases-src]][releases-lnk]
+> [![Pull Requests][pullrequest-src]][pullrequest-lnk]
+> [![Issues][issues-src]][issues-lnk]
 
 # Setup #
 
@@ -20,12 +20,31 @@ bash (cmd)
 
 # Commands #
 
-* `ls` : lists directories, files, and links
+| Command           | Description                                                           |                                                |
+|-------------------|-----------------------------------------------------------------------|------------------------------------------------|
+|                   |                                                                       |                                                |
+| `ls`              | lists directories, files, and links                                   | [www.google.com](www.google.com)               |
+|                   |                                                                       |                                                |
 
 # Notes #
 
 * [www.google.com](www.google.com)
 
+---
 
+> License: [MIT][license-lnk]
 
+[license-src]: https://img.shields.io/badge/License-MIT-green.svg?style=flat-square
+[license-lnk]: https://choosealicense.com/licenses/mit
 
+[travis-src]: https://img.shields.io/travis/{owner}/{repository}.svg?style=flat-square
+[travis-lnk]: https://travis-ci.org/{owner}/{repository}
+
+[releases-src]: https://img.shields.io/github/downloads/{owner}/{repository}/total.svg?style=flat-square
+[releases-lnk]: https://github.com/{owner}/{repository}/releases
+
+[pullrequest-src]: https://img.shields.io/github/issues-pr/{owner}/{repository}.svg?style=flat-square
+[pullrequest-lnk]: https://github.com/{owner}/{repository}/pulls
+
+[issues-src]: https://img.shields.io/github/issues/{owner}/{repository}.svg?style=flat-square
+[issues-lnk]: https://github.com/{owner}/{repository}/issues

@@ -19,7 +19,7 @@ install :
   - yarn install
 
 script :
-  - npm run version
+  - npm run ci
 
 after_success :
   - export REP=kuwas/express

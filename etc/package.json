@@ -50,11 +50,14 @@
     "test" : "npm run test:all" ,
     "test:one" : "nyc mocha --full-trace" ,
     "test:all" : "nyc mocha --full-trace 'src/**/*.spec.ts'" ,
-    "posttest" : "cat 'doc/coverage/lcov.info' | coveralls" ,
     "pretest" : "npm run clean:coverage" ,
 
     "preversion" : "npm run lint" ,
-    "version" : "npm run test"
+    "version" : "npm run test" ,
+
+    "postci" : "cat 'doc/coverage/lcov.info' | coveralls" ,
+    "ci" : "npm run version" ,
+    "preci" : ""
 
   } ,
 

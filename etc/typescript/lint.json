@@ -7,7 +7,7 @@
     "member-ordering" : [ true , { "order" : [ "instance-field" , "static-field" , "private-instance-method" , "protected-instance-method" , "public-instance-method" , "static-method" , "constructor" ] } ] ,
     "no-any" : false ,
     "no-empty-interface" : true ,
-    "no-import-side-effect" : true ,
+    "no-import-side-effect" : false ,
     "no-inferrable-types" : false ,
     "no-internal-module" : true ,
     "no-magic-numbers" : false ,
@@ -18,7 +18,7 @@
     "only-arrow-functions" : true ,
     "prefer-for-of" : true ,
     "promise-function-async" : true ,
-    "typedef" : [ true , "array-destructuring" , "arrow-call-signature" , "arrow-parameter" , "call-signature" , "member-variable-declaration" , "object-destructuring" , "parameter" , "property-declaration" , "variable-declaration" ] ,
+    "typedef" : [ true , "array-destructuring" , "call-signature" , "member-variable-declaration" , "object-destructuring" , "parameter" , "property-declaration" , "variable-declaration" ] ,
     "typedef-whitespace" : [ true , { "call-signature" : "onespace" , "index-signature" : "onespace" , "parameter" : "onespace" , "property-declaration" : "onespace" , "variable-declaration" : "onespace" } , { "call-signature" : "onespace" , "index-signature" : "onespace" , "parameter" : "onespace" , "property-declaration" : "onespace" , "variable-declaration" : "onespace" } ] ,
     "unified-signatures" : true ,
 
@@ -58,7 +58,7 @@
     "no-var-keyword" : true ,
     "no-void-expression" : true ,
     "radix" : true ,
-    "restrict-plus-operands" : true ,
+    "restrict-plus-operands" : false ,
     "strict-boolean-expressions" : false ,
     "strict-type-predicates" : true ,
     "switch-default" : true ,
@@ -112,7 +112,7 @@
     "prefer-method-signature" : true ,
     "quotemark" : [ true , "double" , "avoid-escape" ] ,
     "space-before-function-paren" : [ true , { "anonymous" : "always" , "asyncArrow" : "always" , "constructor" : "never" , "method" : "never" , "named" : "never" } ] ,
-    "variable-name" : [ true , "allow-leading-underscore" , "ban-keywords" , "check-format" ] ,
+    "variable-name" : [ true , "allow-leading-underscore" , "ban-keywords" ] ,
     "whitespace" : [ true , "check-branch" , "check-decl" , "check-module" , "check-operator" , "check-preblock" , "check-separator" , "check-type" , "check-typecast" ] ,
     "semicolon" : [ true , "always" ]
 

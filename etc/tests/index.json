@@ -3,23 +3,18 @@
   "instrument" : true ,
   "report-dir" : "doc/coverage" ,
 
-  "include" :
-  [
-    "src/**/*.ts"
-  ] ,
-
-  "exclude" :
-  [
-    "src/**/*.spec.ts"
-  ] ,
+  "include" : [ "src/**/*.ts" ] ,
+  "exclude" : [ "src/**/*.spec.ts" ] ,
 
   "require" :
   [
-    "ts-node/register"
+    "ts-node/register" ,
+    "source-map-support/register"
   ] ,
 
   "reporter" :
   [
+    "lcov" ,
     "text-summary" ,
     "html"
   ] ,

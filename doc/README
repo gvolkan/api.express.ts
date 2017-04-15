@@ -2,6 +2,7 @@
 
 > [![License][license-src]][license-lnk]
 > [![Travis][travis-src]][travis-lnk]
+> [![Coveralls][coveralls-src]][coveralls-lnk]
 > [![Releases][releases-src]][releases-lnk]
 > [![Pull Requests][pullrequest-src]][pullrequest-lnk]
 > [![Issues][issues-src]][issues-lnk]
@@ -66,6 +67,9 @@ ts-node run --host=(host) --https=(https) --http=(http)
 
 [travis-src]: https://img.shields.io/travis/stiminteractive/api.express.ts.svg?style=flat-square
 [travis-lnk]: https://travis-ci.org/stiminteractive/api.express.ts
+
+[coveralls-src]: https://img.shields.io/coveralls/stiminteractive/api.express.ts.svg?style=flat-square
+[coveralls-lnk]: https://coveralls.io/github/stiminteractive/api.express.ts
 
 [releases-src]: https://img.shields.io/github/downloads/stiminteractive/api.express.ts/total.svg?style=flat-square
 [releases-lnk]: https://github.com/stiminteractive/api.express.ts/releases

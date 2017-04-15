@@ -15,6 +15,7 @@
     "http-server" : "http-server" ,
     "typedoc" : "typedoc" ,
     "tslint" : "tslint" ,
+    "coveralls" : "coveralls" ,
     "mocha" : "mocha" ,
     "nyc" : "nyc" ,
 
@@ -42,13 +43,14 @@
     "doc" : "typedoc --options 'typedoc.json' --exclude '**/*.(spec|d).ts' 'src'" ,
     "predoc" : "npm run clean:doc" ,
 
-    "postlint" : "cat doc/analyze/index.txt" ,
+    "postlint" : "cat 'doc/analyze/index.txt'" ,
     "lint" : "tslint --project 'tsconfig.json' --format 'codeFrame' --exclude '**/*.d.ts' --out 'doc/analyze/index.txt' --type-check --force 'src/**/*.ts'" ,
     "prelint" : "npm run clean:analyze" ,
 
     "test" : "npm run test:all" ,
-    "test:one" : "nyc mocha --compilers ts-node/register --require source-map-support/register --full-trace" ,
-    "test:all" : "nyc mocha --compilers ts-node/register --require source-map-support/register --full-trace src/**/*.spec.ts" ,
+    "test:one" : "nyc mocha --full-trace" ,
+    "test:all" : "nyc mocha --full-trace 'src/**/*.spec.ts'" ,
+    "posttest" : "cat 'doc/coverage/lcov.info' | coveralls" ,
     "pretest" : "npm run clean:coverage" ,
 
     "preversion" : "npm run lint" ,
@@ -93,6 +95,7 @@
     "@types/sinon-chai" : "2.7.x" ,
     "sinon-express-mock" : "1.2.x" ,
     "source-map-support" : "0.4.x" ,
+    "coveralls" : "2.13.x" ,
     "nyc" : "10.1.x" ,
 
     "chance" : "1.0.x" ,

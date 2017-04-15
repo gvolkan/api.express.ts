@@ -17,7 +17,7 @@
       "chai" ,
       "mocha" ,
       "sinon-chai" ,
-      "sinon"
+      "sinon" ,
       "chance" ,
       "numeral" ,
       "lodash"

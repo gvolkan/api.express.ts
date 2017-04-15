@@ -8,7 +8,7 @@ services : [ "docker" ]
 notifications :
   email :
     recipients :
-      - {email}
+      - k@whiteoranges.com
     on_success : never
     on_failure : always
 
@@ -22,7 +22,7 @@ script :
   - npm run ci
 
 after_success :
-  - export REP={owner}/{repository}
+  - export REP=kuwas/template.api
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ] ; then echo "latest" ; else echo $TRAVIS_BRANCH ; fi`
   - docker build -f Dockerfile -t $REP:$TRAVIS_COMMIT .
   - docker tag $REP:$TRAVIS_COMMIT $REP:$TRAVIS_BUILD_NUMBER-$TRAVIS_BRANCH

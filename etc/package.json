@@ -3,7 +3,7 @@
   "name" : "@kuwas/express" ,
   "description" : "" ,
   "repository" : { "url" : "https://github.com/stiminteractive/api.express.ts" , "type" : "git" } ,
-  "keywords" : [ "node" , "typescript" , "express" ] ,
+  "keywords" : [ "typescript" ] ,
 
   "license" : "MIT" ,
   "author" : "WHITEORANGES INC." ,

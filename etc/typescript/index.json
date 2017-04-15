@@ -16,8 +16,8 @@
       "winston" ,
       "chai" ,
       "mocha" ,
-      "sinon" ,
       "sinon-chai" ,
+      "sinon"
       "chance" ,
       "numeral" ,
       "lodash"

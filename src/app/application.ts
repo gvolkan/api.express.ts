@@ -40,7 +40,7 @@ export class Application extends ServerLoader
       // .use( Middleware.urlencoded() )
       .use( Middleware.json() )
       .use( Middleware.logger() )
-      ;
+    ;
   }
 
   /** @param */
@@ -48,7 +48,7 @@ export class Application extends ServerLoader
   {
     this
       .use( Middleware.error() )
-      ;
+    ;
   }
 
   /** @param */

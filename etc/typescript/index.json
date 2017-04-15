@@ -1,0 +1,28 @@
+{
+  "compilerOptions" :
+  {
+    "target" : "es6" ,
+    "module" : "commonjs" ,
+    "moduleResolution" : "node" ,
+    "experimentalDecorators" : true ,
+    "emitDecoratorMetadata" : true ,
+
+    "types" :
+    [
+      "node" ,
+      "chai" ,
+      "mocha" ,
+      "sinon-chai" ,
+      "sinon"
+    ] ,
+
+    "lib" :
+    [
+      "ES2015" ,
+      "ES2016" ,
+      "ES2017"
+    ]
+
+  }
+
+}

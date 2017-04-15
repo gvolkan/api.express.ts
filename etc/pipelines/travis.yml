@@ -1,0 +1,30 @@
+---
+#####
+sudo : required
+language : node_js
+node_js : [ "7" ]
+services : [ "docker" ]
+
+notifications :
+  email :
+    recipients :
+      - {email}
+    on_success : never
+    on_failure : always
+
+before_install :
+  - npm install -g yarn
+
+install :
+  - yarn install
+
+script :
+  - npm run ci
+
+after_success :
+  - export REP={owner}/{repository}
+  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ] ; then echo "latest" ; else echo $TRAVIS_BRANCH ; fi`
+  - docker build -f Dockerfile -t $REP:$TRAVIS_COMMIT .
+  - docker tag $REP:$TRAVIS_COMMIT $REP:$TRAVIS_BUILD_NUMBER-$TRAVIS_BRANCH
+  - docker tag $REP:$TRAVIS_COMMIT $REP:$TAG
+  - docker images -a

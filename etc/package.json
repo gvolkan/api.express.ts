@@ -1,0 +1,87 @@
+{
+  "version" : "1.0.0" ,
+  "name" : "@kuwas/template" ,
+  "description" : "" ,
+  "repository" : { "url" : "https://github.com/{owner}/{repository}" , "type" : "git" } ,
+  "keywords" : [] ,
+
+  "license" : "MIT" ,
+  "author" : "{author}" ,
+  "homepage" : "{website}" ,
+
+  "scripts" :
+  {
+    "ts-node" : "ts-node" ,
+    "http-server" : "http-server" ,
+    "typedoc" : "typedoc" ,
+    "tslint" : "tslint" ,
+    "coveralls" : "coveralls" ,
+    "mocha" : "mocha" ,
+    "nyc" : "nyc" ,
+
+    "clean" : "npm run clean:all" ,
+    "clean:all" : "npm run clean:analyze && npm run clean:coverage && npm run clean:dist && npm run clean:modules && npm run clean:doc" ,
+    "clean:analyze" : "rm -rf 'doc/analyze' && mkdir 'doc/analyze' && touch 'doc/analyze/.gitkeep'" ,
+    "clean:coverage" : "rm -rf 'doc/coverage' && mkdir 'doc/coverage' && touch 'doc/coverage/.gitkeep'" ,
+    "clean:dist" : "rm -rf 'dist' && mkdir 'dist' && touch 'dist/.gitkeep'" ,
+    "clean:modules" : "npm cache clean && rm -rf 'node_modules'" ,
+    "clean:doc" : "rm -rf 'doc/typedoc'" ,
+
+    "start" : "npm run serve" ,
+    "serve" : "ts-node run" ,
+    "serve:analyze" : "http-server 'doc/analyze'" ,
+    "preserve:analyze" : "npm run lint" ,
+    "serve:coverage" : "http-server 'doc/coverage'" ,
+    "preserve:coverage" : "npm run test" ,
+    "serve:dist" : "http-server --cors 'dist'" ,
+    "preserve:dist" : "npm run build" ,
+    "serve:doc" : "http-server 'doc/typedoc'" ,
+    "preserve:doc" : "npm run doc" ,
+
+    "doc" : "typedoc --options 'typedoc.json' --exclude '**/*.(spec|d).ts' 'src'" ,
+    "predoc" : "npm run clean:doc" ,
+
+    "postlint" : "cat 'doc/analyze/index.txt'" ,
+    "lint" : "tslint --project 'tsconfig.json' --format 'codeFrame' --exclude '**/*.d.ts' --out 'doc/analyze/index.txt' --type-check --force 'src/**/*.ts'" ,
+    "prelint" : "npm run clean:analyze" ,
+
+    "test" : "npm run test:all" ,
+    "test:one" : "nyc mocha --full-trace" ,
+    "test:all" : "nyc mocha --full-trace 'src/**/*.spec.ts'" ,
+    "pretest" : "npm run clean:coverage" ,
+
+    "preversion" : "npm run lint" ,
+    "version" : "npm run test" ,
+
+    "postci" : "cat 'doc/coverage/lcov.info' | coveralls" ,
+    "ci" : "npm run version" ,
+    "preci" : ""
+
+  } ,
+
+  "dependencies" :
+  {
+    "ts-node" : "2.1.x" ,
+    "@types/node" : "7.0.x" ,
+    "typescript" : "2.2.x" ,
+    "@reactivex/rxjs" : "5.3.x" ,
+    "@types/promise" : "7.1.x" ,
+    "http-server" : "0.9.x" ,
+    "typedoc" : "0.5.x" ,
+    "tslint" : "4.5.x" ,
+
+    "chai" : "3.5.x" ,
+    "@types/chai" : "3.4.x" ,
+    "mocha" : "3.2.x" ,
+    "@types/mocha" : "2.2.x" ,
+    "sinon" : "2.0.x" ,
+    "@types/sinon" : "1.16.x" ,
+    "sinon-chai" : "2.8.x" ,
+    "@types/sinon-chai" : "2.7.x" ,
+    "source-map-support" : "0.4.x" ,
+    "coveralls" : "2.13.x" ,
+    "nyc" : "10.1.x"
+
+  }
+
+}

@@ -9,7 +9,7 @@ export const COMMAND : GroupedOutput = CommandLineArgs
   { name : "https" ,      type : String ,  defaultValue : "3443"    } ,
   { name : "host" ,       type : String ,  defaultValue : "0.0.0.0" } ,
 
-  { name : "debug" ,      type : Boolean , defaultValue : true      } ,
+  { name : "debug" ,      type : Boolean , defaultValue : false     } ,
 
   { name : "bail" ,       type : Boolean } ,
   { name : "compilers" ,  type : String  } ,

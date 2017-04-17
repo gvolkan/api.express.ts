@@ -1,0 +1,17 @@
+### git ###
+
+!.gitkeep
+!.gitignore
+
+### ide ###
+
+*.iml
+.idea
+
+### mac ###
+
+*.db
+.DS_Store
+.Spotlight*
+.Trashes
+._*

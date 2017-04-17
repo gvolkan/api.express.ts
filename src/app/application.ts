@@ -72,11 +72,11 @@ export class Application extends ServerLoader
 
     OAuthService
       .authenticate( oAuthRequest , oAuthResponse )
-      .then( ( o : any ) =>
+      .then( ( o ) =>
       {
         next( true ) ;
       })
-      .catch( ( e : Error ) =>
+      .catch( ( e ) =>
       {
         next( false ) ;
       })

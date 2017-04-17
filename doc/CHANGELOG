@@ -1,25 +1,10 @@
-# 1.0.4 #
+# 1.1.0 #
 ## 2017-04-17 ##
 
-* Fixed: several typo issues
-* Moved: files to datas and service
-
-# 1.0.3 #
-## 2017-04-15 ##
-
 * Added: api.template.ts template
-* Added: readme coveralls badge
-* Fixed: tsconfig typo issue
-
-# 1.0.2 #
-## 2017-04-15 ##
-
-* Added: ci specific build
-
-# 1.0.1 #
-## 2017-04-15 ##
-
 * Added: coveralls coverage support
+* Added: oauth server support
+* Moved: files to datas and service
 * Moved: travis configuration file
 
 # 1.0.0 #

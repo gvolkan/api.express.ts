@@ -1,6 +1,6 @@
 {
   "version" : "1.0.0" ,
-  "name" : "@kuwas/template" ,
+  "name" : "@kuwas/api.template.ts" ,
   "description" : "" ,
   "repository" : { "url" : "https://github.com/{owner}/{repository}" , "type" : "git" } ,
   "keywords" : [] ,
@@ -25,7 +25,7 @@
     "clean:coverage" : "rm -rf 'doc/coverage' && mkdir 'doc/coverage' && touch 'doc/coverage/.gitkeep'" ,
     "clean:dist" : "rm -rf 'dist' && mkdir 'dist' && touch 'dist/.gitkeep'" ,
     "clean:modules" : "npm cache clean && rm -rf 'node_modules'" ,
-    "clean:doc" : "rm -rf 'doc/typedoc'" ,
+    "clean:doc" : "rm -rf 'doc/documentation'" ,
 
     "start" : "npm run serve" ,
     "serve" : "ts-node run" ,
@@ -35,7 +35,7 @@
     "preserve:coverage" : "npm run test" ,
     "serve:dist" : "http-server --cors 'dist'" ,
     "preserve:dist" : "npm run build" ,
-    "serve:doc" : "http-server 'doc/typedoc'" ,
+    "serve:doc" : "http-server 'doc/documentation'" ,
     "preserve:doc" : "npm run doc" ,
 
     "doc" : "typedoc --options 'typedoc.json' --exclude '**/*.(spec|d).ts' 'src'" ,
@@ -69,6 +69,10 @@
     "http-server" : "0.9.x" ,
     "typedoc" : "0.5.x" ,
     "tslint" : "4.5.x" ,
+
+    "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#1.0.0" ,
+    "@kuwas/etc.tests.tpl" : "kuwas/etc.tests.tpl#1.0.0" ,
+    "@kuwas/etc.typescript.tpl" : "kuwas/etc.typescript.tpl#1.0.0" ,
 
     "chai" : "3.5.x" ,
     "@types/chai" : "3.4.x" ,

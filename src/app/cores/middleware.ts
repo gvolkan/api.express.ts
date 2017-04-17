@@ -12,8 +12,8 @@ import { responseWhitelist } from "express-winston" ;
 import * as StrongErrorHandler from "strong-error-handler" ;
 import { transports } from "winston" ;
 
+import { COMMAND } from "../../../etc/app/command" ;
 import { CORS } from "../../../etc/app/cors" ;
-import { DEBUG } from "../../../etc/app/debug" ;
 
 /** @exports */
 export class Middleware
@@ -22,13 +22,13 @@ export class Middleware
   public static json() : RequestHandler
   {
     return json() ;
-  } ;
+  }
 
   /** @param */
   public static urlencoded() : RequestHandler
   {
     return urlencoded({ extended : true }) ;
-  } ;
+  }
 
   /** @param */
   public static cors() : RequestHandler
@@ -46,8 +46,8 @@ export class Middleware
   /** @param */
   public static error() : ErrorRequestHandler
   {
-    return StrongErrorHandler({ debug : DEBUG , log : true }) ;
-  } ;
+    return StrongErrorHandler({ debug : COMMAND.debug , log : true }) ;
+  }
 
   /** @param */
   public static logger() : ErrorRequestHandler
@@ -76,6 +76,6 @@ export class Middleware
 
     }) ;
 
-  } ;
+  }
 
 }

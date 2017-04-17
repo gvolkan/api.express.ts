@@ -1,12 +1,12 @@
 /** @imports */
-import { expect } from "../../../mocha" ;
+import { expect } from "../../../../mocha" ;
 
 import { mockRes as Response } from "sinon-express-mock" ;
 import { Repository } from "typeorm" ;
 
-import { user } from "../../../mocha/mocks/user" ;
-import { User as T } from "../../users/user" ;
-import { StoreService as Store } from "../store/store.service" ;
+import { user } from "../../../../mocha/mocks/user" ;
+import { User as T } from "../../../users/datas/user" ;
+import { StoreService as Store } from "../../store/store.service" ;
 import { RestService as Service } from "./rest.service" ;
 
 /** @tests */

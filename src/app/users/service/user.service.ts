@@ -1,8 +1,8 @@
 /** @imports */
 import { Service } from "ts-express-decorators" ;
 
-import { RestService } from "../shared/rest/rest.service" ;
-import { User as T } from "./user" ;
+import { RestService } from "../../shared/rest/service/rest.service" ;
+import { User as T } from "../datas/user" ;
 
 /** @exports */
 @Service()

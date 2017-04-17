@@ -3,7 +3,7 @@ import { expect } from "../../../mocha" ;
 
 import { Repository } from "typeorm" ;
 
-import { User as T } from "../../users/user" ;
+import { User as T } from "../../users/datas/user" ;
 import { StoreService as Service } from "./store.service" ;
 
 /** @tests */

@@ -6,7 +6,7 @@ import { createConnection } from "typeorm" ;
 import { Service } from "ts-express-decorators" ;
 
 import { STORE } from "../../../../etc/app/store" ;
-import { User } from "../../users/user" ;
+import { User } from "../../users/datas/user" ;
 
 /** @exports */
 @Service()

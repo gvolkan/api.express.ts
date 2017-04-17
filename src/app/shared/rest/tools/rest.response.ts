@@ -1,9 +1,9 @@
 /** @imports */
 import { Response as Responses } from "express" ;
 
-import { RestCodes } from "./rest.codes" ;
-import { RESTMESSAGES } from "./rest.messages" ;
-import { RestOutpt } from "./rest.outpt" ;
+import { RestCodes } from "../datas/rest.codes" ;
+import { RESTMESSAGES } from "../datas/rest.messages" ;
+import { RestOutpt } from "../datas/rest.outpt" ;
 
 /** @exports */
 export class RestResponse<T>

@@ -1,11 +1,11 @@
 /** @imports */
-import { expect } from "../../../mocha" ;
+import { expect } from "../../../../mocha" ;
 
 import { mockRes as Response } from "sinon-express-mock" ;
 
-import { RestCodes } from "./rest.codes" ;
-import { RESTMESSAGES } from "./rest.messages" ;
-import { RestOutpt } from "./rest.outpt" ;
+import { RestCodes } from "../datas/rest.codes" ;
+import { RESTMESSAGES } from "../datas/rest.messages" ;
+import { RestOutpt } from "../datas/rest.outpt" ;
 import { RestResponse } from "./rest.response" ;
 
 /** @tests */

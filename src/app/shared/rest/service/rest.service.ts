@@ -2,7 +2,7 @@
 import { Service } from "ts-express-decorators" ;
 import { Repository } from "typeorm" ;
 
-import { StoreService } from "../store/store.service" ;
+import { StoreService } from "../../store/store.service" ;
 
 /** @exports */
 @Service()

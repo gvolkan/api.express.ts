@@ -1,7 +1,7 @@
 /** @imports */
 import { Response } from "express" ;
-import { RestResponse } from "./rest/rest.response" ;
-import { RestService } from "./rest/rest.service";
+import { RestResponse } from "./tools/rest.response" ;
+import { RestService } from "./service/rest.service";
 
 /** @exports */
 export class RestController<T>

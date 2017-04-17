@@ -11,9 +11,9 @@ import { Controller } from "ts-express-decorators" ;
 import { PathParams } from "ts-express-decorators" ;
 import { Response as ResponseParam } from "ts-express-decorators" ;
 
-import { RestController } from "../shared/rest.controller" ;
-import { User as T } from "./user" ;
-import { UserService } from "./user.service" ;
+import { RestController } from "../shared/rest/rest.controller" ;
+import { User as T } from "./datas/user" ;
+import { UserService } from "./service/user.service" ;
 
 /** @exports */
 @Controller( "/user" )

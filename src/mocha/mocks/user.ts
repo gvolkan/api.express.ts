@@ -1,5 +1,5 @@
 /** @imports */
-import { User as T } from "../../app/users/user" ;
+import { User as T } from "../../app/users/datas/user" ;
 
 /** @exports */
 export const user : T =

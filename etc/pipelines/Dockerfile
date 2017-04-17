@@ -11,4 +11,4 @@ RUN npm install
 # cmd #
 
 EXPOSE 443 80
-CMD [ "/usr/bin/npm" , "start" ]
+CMD [ "/usr/bin/npm" , "run ts-node run" ]

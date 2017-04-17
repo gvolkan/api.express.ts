@@ -4,28 +4,22 @@ import { Entity } from "typeorm" ;
 import { PrimaryGeneratedColumn } from "typeorm" ;
 
 /** @exports */
-@Entity()
+@Entity( "User" )
 export class User
 {
   @PrimaryGeneratedColumn()
   public id : number ;
 
-  @Column()
+  @Column( "string" )
   public key : string ;
 
-  @Column()
-  public name : string ;
+  @Column( "string" )
+  public username : string ;
 
-  @Column()
-  public email : string ;
+  @Column( "string" )
+  public password : string ;
 
-  @Column()
-  public token : string ;
-
-  @Column()
-  public pass : string ;
-
-  @Column()
+  @Column( "string" )
   public salt : string ;
 
 }

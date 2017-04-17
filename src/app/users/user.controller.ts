@@ -6,6 +6,7 @@ import { Post } from "ts-express-decorators" ;
 import { Put } from "ts-express-decorators" ;
 
 import { Response } from "express" ;
+import { Authenticated } from "ts-express-decorators" ;
 import { BodyParams } from "ts-express-decorators" ;
 import { Controller } from "ts-express-decorators" ;
 import { PathParams } from "ts-express-decorators" ;
@@ -21,6 +22,7 @@ export class UserController extends RestController<T>
 {
   /** @param */
   @Get( "/:id" )
+  @Authenticated()
   public async getOne( @ResponseParam() response : Response , @PathParams( "id" ) id : number ) : Promise<Response>
   {
     return super.getOne( response , id ) ;
@@ -28,6 +30,7 @@ export class UserController extends RestController<T>
 
   /** @param */
   @Delete( "/:id" )
+  @Authenticated()
   public async delOne( @ResponseParam() response : Response , @PathParams( "id" ) id : number ) : Promise<Response>
   {
     return super.delOne( response , id ) ;
@@ -36,6 +39,7 @@ export class UserController extends RestController<T>
   /** @param */
   @Put( "/:id" )
   // @Patch( "/:id" )
+  @Authenticated()
   public async putOne( @ResponseParam() response : Response , @PathParams( "id" ) id : number , @BodyParams() entity : T ) : Promise<Response>
   {
     return super.putOne( response , id , entity ) ;
@@ -50,6 +54,7 @@ export class UserController extends RestController<T>
 
   /** @param */
   @Get( "" )
+  @Authenticated()
   public async getAll( @ResponseParam() response : Response ) : Promise<Response>
   {
     return super.getAll( response ) ;

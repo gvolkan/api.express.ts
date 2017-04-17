@@ -6,8 +6,8 @@ import { mockRes as Response } from "sinon-express-mock" ;
 import { user } from "../../mocha/mocks/user" ;
 import { RestCodes } from "../shared/rest/datas/rest.codes" ;
 import { StoreService as Store } from "../shared/store/store.service" ;
-import { UserController as Controller } from "./user.controller" ;
 import { UserService as Service } from "./service/user.service" ;
+import { UserController as Controller } from "./user.controller" ;
 
 /** @tests */
 describe( "user.controller" , () =>

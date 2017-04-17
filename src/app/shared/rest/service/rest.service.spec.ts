@@ -34,7 +34,7 @@ describe( "rest.service" , () =>
     it( "201 Created response" , async () =>
     {
       const outpt : T = await service.pstOne( user ) ;
-      expect( outpt.email ).to.be.equal( user.email ) ;
+      expect( outpt.username ).to.be.equal( user.username ) ;
     }) ;
 
   }) ;
@@ -44,7 +44,7 @@ describe( "rest.service" , () =>
     it( "200 Success response" , async () =>
     {
       const outpt : T = await service.getOne( user.id ) ;
-      expect( outpt.email ).to.be.equal( user.email ) ;
+      expect( outpt.username ).to.be.equal( user.username ) ;
     }) ;
 
     it( "404 NotFound response" , async () =>
@@ -60,7 +60,7 @@ describe( "rest.service" , () =>
     it( "200 Success response" , async () =>
     {
       const outpt : T = await service.putOne( user.id , user ) ;
-      expect( outpt.email ).to.be.equal( user.email ) ;
+      expect( outpt.username ).to.be.equal( user.username ) ;
     }) ;
 
     it( "404 NotFound response" , async () =>

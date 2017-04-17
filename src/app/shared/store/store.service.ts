@@ -6,6 +6,8 @@ import { createConnection } from "typeorm" ;
 import { Service } from "ts-express-decorators" ;
 
 import { STORE } from "../../../../etc/app/store" ;
+import { Client } from "../../auths/datas/client" ;
+import { Token } from "../../auths/datas/token" ;
 import { User } from "../../users/datas/user" ;
 
 /** @exports */
@@ -16,6 +18,9 @@ export class StoreService
   protected dbc : Connection ;
 
   /** @param */
+  public key : string = "Store" ;
+
+  /** @param */
   public async store() : Promise<Connection>
   {
     if ( !this.dbc ) {
@@ -23,11 +28,15 @@ export class StoreService
       this.dbc = await createConnection
       ({
         driver : STORE ,
+        name : this.key ,
         // autoSchemaSync : true ,
         entities :
         [
+          Client ,
+          Token ,
           User ,
-        ],
+        ] ,
+
       }) ;
 
     }

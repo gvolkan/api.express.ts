@@ -6,9 +6,7 @@ export const user : T =
 {
   id : 10000 ,
   key : "tests" ,
-  name : "tests" ,
-  email : "tests@email.com" ,
-  pass : "tests" ,
-  token : "" ,
+  username : "tests@email.com" ,
+  password : "tests" ,
   salt : "" ,
 } ;

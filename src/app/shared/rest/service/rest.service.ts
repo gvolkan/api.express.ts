@@ -24,7 +24,7 @@ export class RestService<T>
   {
     try {
       const store : Repository<T> = await this.repository() ;
-      const one : T = await store.findOne({ id : id }) ;
+      const one : T = await store.findOne({ id }) ;
       if ( !one ) { return null ; }
       return one ;
     } finally {}
@@ -38,7 +38,7 @@ export class RestService<T>
   {
     try {
       const store : Repository<T> = await this.repository() ;
-      const one : T = await store.findOne({ id : id }) ;
+      const one : T = await store.findOne({ id }) ;
       if ( !one ) { return null ; }
       const two : T = await store.remove( one ) ;
       return true ;
@@ -54,7 +54,7 @@ export class RestService<T>
   {
     try {
       const store : Repository<T> = await this.repository() ;
-      const one : T = await store.findOne({ id : id }) ;
+      const one : T = await store.findOne({ id }) ;
       if ( !one ) { return null ; }
       const two : T = store.merge( one , entity ) ;
       const three : T = await store.persist( two ) ;

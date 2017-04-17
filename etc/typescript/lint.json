@@ -112,7 +112,7 @@
     "prefer-method-signature" : true ,
     "quotemark" : [ true , "double" , "avoid-escape" ] ,
     "space-before-function-paren" : [ true , { "anonymous" : "always" , "asyncArrow" : "always" , "constructor" : "never" , "method" : "never" , "named" : "never" } ] ,
-    "variable-name" : [ true , "allow-leading-underscore" , "ban-keywords" , "check-format" ] ,
+    "variable-name" : [ true , "allow-leading-underscore" , "ban-keywords" ] ,
     "whitespace" : [ true , "check-branch" , "check-decl" , "check-module" , "check-operator" , "check-preblock" , "check-separator" , "check-type" , "check-typecast" ] ,
     "semicolon" : [ true , "always" ]
 

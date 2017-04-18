@@ -19,7 +19,7 @@ install :
   - yarn install
 
 script :
-  - npm run ci
+  - yarn run ci
 
 after_success :
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ] ; then echo "latest" ; else echo $TRAVIS_BRANCH ; fi`

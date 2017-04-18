@@ -52,7 +52,7 @@
     "test:all" : "nyc mocha --full-trace 'src/**/*.spec.ts'" ,
     "pretest" : "npm run clean:coverage" ,
 
-    "preversion" : "npm run lint" ,
+    "preversion" : "npm run lint && npm run doc" ,
     "version" : "npm run test" ,
 
     "postci" : "cat 'doc/coverage/lcov.info' | coveralls" ,
@@ -72,9 +72,9 @@
     "typedoc" : "0.5.x" ,
     "tslint" : "4.5.x" ,
 
-    "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#1.0.1" ,
-    "@kuwas/etc.tests.tpl" : "kuwas/etc.tests.tpl#1.0.0" ,
-    "@kuwas/etc.typescript.tpl" : "kuwas/etc.typescript.tpl#1.0.0" ,
+    "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#1.0.x" ,
+    "@kuwas/etc.tests.tpl" : "kuwas/etc.tests.tpl#1.0.x" ,
+    "@kuwas/etc.typescript.tpl" : "kuwas/etc.typescript.tpl#1.0.x" ,
 
     "express" : "4.15.x" ,
     "@types/express" : "4.0.x" ,

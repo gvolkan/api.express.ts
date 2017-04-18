@@ -11,15 +11,15 @@
 
 ```
 npm install -g yarn
-npm install -g ts-node
-npm install -g typescript@2.x.x
+yarn install -g ts-node
+yarn install -g typescript@2.x.x
 yarn install
 ```
 
 # Usage #
 
 ```
-npm run (cmd)
+yarn run (cmd)
 ```
 
 * `cmd` is a command from the lists below

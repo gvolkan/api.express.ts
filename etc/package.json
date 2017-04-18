@@ -70,7 +70,7 @@
     "typedoc" : "0.5.x" ,
     "tslint" : "4.5.x" ,
 
-    "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#1.0.x" ,
+    "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#1.1.x" ,
     "@kuwas/etc.tests.tpl" : "kuwas/etc.tests.tpl#1.0.x" ,
     "@kuwas/etc.typescript.tpl" : "kuwas/etc.typescript.tpl#1.0.x" ,
 

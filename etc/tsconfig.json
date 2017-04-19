@@ -17,10 +17,7 @@
       "chai" ,
       "mocha" ,
       "sinon-chai" ,
-      "sinon" ,
-      "chance" ,
-      "numeral" ,
-      "lodash"
+      "sinon"
     ] ,
 
     "lib" :

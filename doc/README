@@ -22,16 +22,16 @@ yarn install
 yarn run (cmd)
 ```
 
-* `cmd` is a command from the lists below
+* `cmd` : is a command from the lists below
 
 ```
 yarn serve -- --host (host) --https (https) --http (http) --debug
 ```
 
-* `host` is the host to bind
-* `https` is the https port to bind
-* `http` is the http port to bind
-* `debug` is to enable debug mode
+* `host` : is the host to bind
+* `https` : is the https port to bind
+* `http` : is the http port to bind
+* `debug` : is to enable debug mode
 
 # Commands #
 

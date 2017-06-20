@@ -54,7 +54,7 @@
   "dependencies" :
   {
     "@types/promise" : "7.1.x" ,
-    "@reactivex/rxjs" : "5.3.x" ,
+    "@reactivex/rxjs" : "5.4.x" ,
 
     "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#1.x.x" ,
     "@kuwas/etc.tests.tpl" : "kuwas/etc.tests.tpl#1.x.x" ,
@@ -78,12 +78,12 @@
     "typeorm" : "0.0.x" ,
 
     "ts-node" : "3.0.x" ,
-    "typedoc" : "0.5.x" ,
-    "tslint" : "4.5.x" ,
-    "http-server" : "0.9.x" ,
-    "mocha" : "3.2.x" ,
+    "typedoc" : "0.7.x" ,
+    "tslint" : "5.4.x" ,
+    "http-server" : "0.10.x" ,
+    "mocha" : "3.4.x" ,
     "coveralls" : "2.13.x" ,
-    "nyc" : "10.1.x"
+    "nyc" : "11.0.x"
 
   }
 

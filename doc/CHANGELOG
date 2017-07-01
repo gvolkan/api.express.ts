@@ -1,3 +1,9 @@
+# 1.3.6 #
+## 2017-07-01 ##
+
+* Added: new travis configuration
+* Removed: coveralls from public
+
 # 1.3.5 #
 ## 2017-06-20 ##
 

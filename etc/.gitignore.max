@@ -28,6 +28,7 @@
 
 ### compile ###
 
+aot
 build
 dist
 doc/analyze

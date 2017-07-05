@@ -24,8 +24,7 @@ install :
 
 script :
   - yarn run ci
-  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ] ; then echo "latest" ; else echo $TRAVIS_BRANCH ; fi`
-  - docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TRAVIS_COMMIT .
-  - docker tag $TRAVIS_REPO_SLUG:$TRAVIS_COMMIT $TRAVIS_REPO_SLUG:$TRAVIS_BUILD_NUMBER-$TRAVIS_BRANCH
-  - docker tag $TRAVIS_REPO_SLUG:$TRAVIS_COMMIT $TRAVIS_REPO_SLUG:$TAG
+  - export BRANCH="${TRAVIS_BRANCH/\//-}"
+  - export TAG=`if [ "$BRANCH" != "master" ] ; then echo "${BRANCH}-${TRAVIS_COMMIT}-${TRAVIS_BUILD_NUMBER}" ; else echo "latest" ; fi`
+  - docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG .
   - docker images -a

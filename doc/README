@@ -38,17 +38,17 @@ bash (cmd)
 [license-src]: https://img.shields.io/badge/License-MIT-green.svg?style=flat-square
 [license-lnk]: https://choosealicense.com/licenses/mit
 
-[travis-src]: https://img.shields.io/travis/kuwaz/api.template.ts.svg?style=flat-square
-[travis-lnk]: https://travis-ci.org/kuwaz/api.template.ts
+[travis-src]: https://img.shields.io/travis/terrandominion/api.template.ts.svg?style=flat-square
+[travis-lnk]: https://travis-ci.org/terrandominion/api.template.ts
 
-[coveralls-src]: https://img.shields.io/coveralls/kuwaz/api.template.ts.svg?style=flat-square
-[coveralls-lnk]: https://coveralls.io/github/kuwaz/api.template.ts
+[coveralls-src]: https://img.shields.io/coveralls/terrandominion/api.template.ts.svg?style=flat-square
+[coveralls-lnk]: https://coveralls.io/github/terrandominion/api.template.ts
 
-[releases-src]: https://img.shields.io/github/downloads/kuwaz/api.template.ts/total.svg?style=flat-square
-[releases-lnk]: https://github.com/kuwaz/api.template.ts/releases
+[releases-src]: https://img.shields.io/github/downloads/terrandominion/api.template.ts/total.svg?style=flat-square
+[releases-lnk]: https://github.com/terrandominion/api.template.ts/releases
 
-[pullrequest-src]: https://img.shields.io/github/issues-pr/kuwaz/api.template.ts.svg?style=flat-square
-[pullrequest-lnk]: https://github.com/kuwaz/api.template.ts/pulls
+[pullrequest-src]: https://img.shields.io/github/issues-pr/terrandominion/api.template.ts.svg?style=flat-square
+[pullrequest-lnk]: https://github.com/terrandominion/api.template.ts/pulls
 
-[issues-src]: https://img.shields.io/github/issues/kuwaz/api.template.ts.svg?style=flat-square
-[issues-lnk]: https://github.com/kuwaz/api.template.ts/issues
+[issues-src]: https://img.shields.io/github/issues/terrandominion/api.template.ts.svg?style=flat-square
+[issues-lnk]: https://github.com/terrandominion/api.template.ts/issues

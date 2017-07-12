@@ -66,17 +66,17 @@ yarn serve -- --host (host) --https (https) --http (http) --debug
 [license-src]: https://img.shields.io/badge/License-MIT-green.svg?style=flat-square
 [license-lnk]: https://choosealicense.com/licenses/mit
 
-[travis-src]: https://img.shields.io/travis/kuwaz/api.express.ts.svg?style=flat-square
-[travis-lnk]: https://travis-ci.org/kuwaz/api.express.ts
+[travis-src]: https://img.shields.io/travis/terrandominion/api.express.ts.svg?style=flat-square
+[travis-lnk]: https://travis-ci.org/terrandominion/api.express.ts
 
-[coveralls-src]: https://img.shields.io/coveralls/kuwaz/api.express.ts.svg?style=flat-square
-[coveralls-lnk]: https://coveralls.io/github/kuwaz/api.express.ts
+[coveralls-src]: https://img.shields.io/coveralls/terrandominion/api.express.ts.svg?style=flat-square
+[coveralls-lnk]: https://coveralls.io/github/terrandominion/api.express.ts
 
-[releases-src]: https://img.shields.io/github/downloads/kuwaz/api.express.ts/total.svg?style=flat-square
-[releases-lnk]: https://github.com/kuwaz/api.express.ts/releases
+[releases-src]: https://img.shields.io/github/downloads/terrandominion/api.express.ts/total.svg?style=flat-square
+[releases-lnk]: https://github.com/terrandominion/api.express.ts/releases
 
-[pullrequest-src]: https://img.shields.io/github/issues-pr/kuwaz/api.express.ts.svg?style=flat-square
-[pullrequest-lnk]: https://github.com/kuwaz/api.express.ts/pulls
+[pullrequest-src]: https://img.shields.io/github/issues-pr/terrandominion/api.express.ts.svg?style=flat-square
+[pullrequest-lnk]: https://github.com/terrandominion/api.express.ts/pulls
 
-[issues-src]: https://img.shields.io/github/issues/kuwaz/api.express.ts.svg?style=flat-square
-[issues-lnk]: https://github.com/kuwaz/api.express.ts/issues
+[issues-src]: https://img.shields.io/github/issues/terrandominion/api.express.ts.svg?style=flat-square
+[issues-lnk]: https://github.com/terrandominion/api.express.ts/issues

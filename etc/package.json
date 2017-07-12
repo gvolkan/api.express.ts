@@ -2,7 +2,7 @@
   "version" : "1.0.0" ,
   "name" : "@kuwas/api.express.ts" ,
   "description" : "" ,
-  "repository" : { "url" : "https://github.com/kuwaz/api.express.ts" , "type" : "git" } ,
+  "repository" : { "url" : "https://github.com/terrandominion/api.express.ts" , "type" : "git" } ,
   "keywords" : [ "typescript" ] ,
 
   "license" : "MIT" ,

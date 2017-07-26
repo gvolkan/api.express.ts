@@ -53,6 +53,7 @@
 
   "dependencies" :
   {
+    "@types/promise" : "7.1.30" ,
     "@reactivex/rxjs" : "5.4.2" ,
 
     "@kuwas/etc.codetests.tpl" : "kuwas/etc.codetests.tpl#2.x.x" ,

@@ -53,21 +53,20 @@
 
   "dependencies" :
   {
-    "@types/promise" : "7.1.x" ,
-    "@reactivex/rxjs" : "5.4.x" ,
+    "@reactivex/rxjs" : "5.4.2" ,
 
     "@kuwas/etc.codetests.tpl" : "kuwas/etc.codetests.tpl#2.x.x" ,
     "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#2.x.x" ,
     "@kuwas/etc.typescript.tpl" : "kuwas/etc.typescript.tpl#2.x.x" ,
 
-    "ts-node" : "3.3.x" ,
-    "typescript" : "2.4.x" ,
-    "typedoc" : "0.7.x" ,
-    "tslint" : "5.5.x" ,
-    "http-server" : "0.10.x" ,
-    "mocha" : "3.4.x" ,
-    "coveralls" : "2.13.x" ,
-    "nyc" : "11.0.x"
+    "ts-node" : "3.3.0" ,
+    "typescript" : "2.4.2" ,
+    "typedoc" : "0.7.2" ,
+    "tslint" : "5.5.0" ,
+    "http-server" : "0.10.0" ,
+    "mocha" : "3.4.2" ,
+    "coveralls" : "2.13.1" ,
+    "nyc" : "11.0.3"
 
   }
 

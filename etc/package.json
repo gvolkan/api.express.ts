@@ -53,38 +53,37 @@
 
   "dependencies" :
   {
-    "@types/promise" : "7.1.x" ,
-    "@reactivex/rxjs" : "5.4.x" ,
+    "@reactivex/rxjs" : "5.4.2" ,
 
     "@kuwas/etc.codetests.tpl" : "kuwas/etc.codetests.tpl#2.x.x" ,
     "@kuwas/etc.pipelines.tpl" : "kuwas/etc.pipelines.tpl#2.x.x" ,
     "@kuwas/etc.typescript.tpl" : "kuwas/etc.typescript.tpl#2.x.x" ,
 
-    "express" : "4.15.x" ,
-    "@types/express" : "4.0.x" ,
+    "express" : "4.15.3" ,
+    "@types/express" : "4.0.36" ,
     "node-oauth2-server" : "oauthjs/node-oauth2-server#3.0.0-b3.1" ,
-    "ts-express-decorators" : "1.4.x" ,
-    "sinon-express-mock" : "1.3.x" ,
+    "ts-express-decorators" : "1.4.12" ,
+    "sinon-express-mock" : "1.3.1" ,
 
-    "body-parser" : "1.17.x" ,
-    "@types/body-parser" : "1.16.x" ,
-    "strong-error-handler" : "2.1.x" ,
-    "express-winston" : "2.4.x" ,
-    "winston" : "2.3.x" ,
-    "@types/winston" : "2.3.x" ,
-    "multer" : "1.3.x" ,
+    "body-parser" : "1.17.2" ,
+    "@types/body-parser" : "1.16.4" ,
+    "strong-error-handler" : "2.2.0" ,
+    "express-winston" : "2.4.0" ,
+    "winston" : "2.3.1" ,
+    "@types/winston" : "2.3.4" ,
+    "multer" : "1.3.0" ,
 
-    "sqlite3" : "3.1.x" ,
-    "typeorm" : "0.0.x" ,
+    "sqlite3" : "3.1.8" ,
+    "typeorm" : "0.0.11" ,
 
-    "ts-node" : "3.3.x" ,
-    "typescript" : "2.4.x" ,
-    "typedoc" : "0.7.x" ,
-    "tslint" : "5.5.x" ,
-    "http-server" : "0.10.x" ,
-    "mocha" : "3.4.x" ,
-    "coveralls" : "2.13.x" ,
-    "nyc" : "11.0.x"
+    "ts-node" : "3.3.0" ,
+    "typescript" : "2.4.2" ,
+    "typedoc" : "0.7.2" ,
+    "tslint" : "5.5.0" ,
+    "http-server" : "0.10.0" ,
+    "mocha" : "3.4.2" ,
+    "coveralls" : "2.13.1" ,
+    "nyc" : "11.0.3"
 
   }
 
